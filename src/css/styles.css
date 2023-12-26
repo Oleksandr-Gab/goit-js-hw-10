@@ -31,13 +31,12 @@
   align-items: center;
   justify-content: flex-start;
   gap: 40px;
-  margin-left: 50px;
-  margin-top: 50px;
-}
+  margin-left: 10px;
+ }
 
 .nav-link {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
@@ -46,3 +45,85 @@
 .nav-link:focus {
   color: #747bff;
 }
+
+.nav-title {
+  margin-top: 24px;
+}
+
+button,
+.btn-snack {
+  color: #989898;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 0;
+}
+
+button:enabled {
+  color: #fff;
+  background: #4E75FF
+}
+
+button:enabled:hover {
+  background: #6C8CFF
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  color: #2e2f42;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400
+  }
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px
+}
+
+.field {
+  display: flex;
+  flex-direction: column
+}
+
+.value {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .04em;
+  text-align: center
+}
+
+.label {
+  text-transform: uppercase;
+  text-align: center
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    gap: 30px
+}
+
+form :first-child label {
+    display: flex;
+    flex-direction: column;
+    appearance: none
+}
+
+.btn-snack:hover {
+    background: #6C8CFF
+}
+
