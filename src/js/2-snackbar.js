@@ -11,9 +11,9 @@ promiseForm.addEventListener('submit', event => {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (radioIn === 'fulfilled') {
-        resolve(`✅ Fulfilled promise in ${getDelay}ms`);
+        resolve(getDelay);
       } else {
-        reject(`❌ Rejected promise in ${getDelay}ms`);
+        reject(getDelay);
       }
     }, getDelay);
   });
@@ -22,13 +22,13 @@ promiseForm.addEventListener('submit', event => {
     .then(value => {
       iziToast.success({
         position: 'topRight',
-        message: `${value}`,
+        message: `✅ Fulfilled promise in ${getDelay}ms`,
       });
     })
     .catch(error => {
       iziToast.error({
         position: 'topRight',
-        message: `${error}`,
+        message: `❌ Rejected promise in ${getDelay}ms`,
       });
     });
 });

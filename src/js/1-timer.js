@@ -57,9 +57,15 @@ btn.addEventListener('click', () => {
       clearInterval(intervalId);
     }
   }, 1000);
-
-  input.value = '';
+  btn.disabled = true;
+  input.disabled = true;
+  console.log(countdownInterval);
+  setTimeout(disabledInput, countdownInterval);
 });
+
+const disabledInput = () => {
+  input.disabled = false;
+};
 
 function updateTimerDisplay(time) {
   daysTimer.textContent = addLeadingZero(time.days);
